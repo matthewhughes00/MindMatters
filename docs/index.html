@@ -3,53 +3,134 @@
 
 <head>
     <title>MindMatters</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS Style Sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 
     <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=EB+Garamond&family=Rubik&display=swap" rel="stylesheet">
 
 </head>
 
 <body id="home">
+    <div class="topnav">
+        <a href="#home">
+            <img src="images/logo.svg" alt="MindMatters Logo" class="logo">
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <ul id="myLinks">
+            <li href="#about" class="navItem">About Us</li>
+            <li href="#resources" class="navItem">Wellness Resources</a>
+                <li href="#join" class="navItem">Join Our Network</a>
+        </ul>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/ham.svg" alt="hamburger menu">
+        </a>
+    </div>
+    <!-- Navigation Bar -->
     <nav>
-        <img src="images/logo.svg" alt="MAH Design Logo" class="logo">
-        <ul>
-            <li>About Me</li>
-            <li>
-                <a href="#MySkills">Skills</a>
+        <img src="images/logo.svg" alt="MindMatters Logo" class="logo">
+        <ul class="navGroup">
+            <li class="navItem">About Us</li>
+            <li class="navItem">
+                <a>Wellness Resources</a>
             </li>
-            <li>
-                <a href="#MyWork">My Work</a>
+            <li class="navItem">
+                <a>Join Our Network</a>
             </li>
-            <li>Connect</li>
         </ul>
     </nav>
 
     <!-- Hero Banner -->
-    <section>
-
+    <section class="hero">
+        <div class="heroCTA">
+            <h1>Past struggles can become today’s victories</h1>
+            <p>We believe healing and empowering your mind comes from tools and guidance best suited for you.</p>
+            <button class="buttonLargeB">Get the App</button>
+        </div>
+        <img src="images/ScreenGrab1.png" alt="App Reference" class="ScreenGrab">
     </section>
 
-    <!-- Section Name -->
-    <section>
-
+    <!-- Main Functions -->
+    <section class="mainFunc">
+        <h2>A simple way to receive care</h2>
+        <div class="learnMore">
+            <p>Find the right mental health professional that fits your needs —</p>
+            <p>Because your mind matters.</p>
+            <button class="buttonSmallB"> Learn More</button>
+        </div>
+        <div class="functionGroup">
+            <div class="funct-child">
+                <img src="images/puzzle.jpg" alt="Puzzle Illustration" class="featPhoto">
+                <h4>Match with a Therapist</h4>
+                <p>Everyone has a unique story. Our filter process eases your burden of finding the right help for your needs.</p>
+            </div>
+            <div class="funct-child">
+                <img src="images/calendar.jpg" alt="Calendar Illustration" class="featPhoto">
+                <h4>Schedule Appointments</h4>
+                <p>Find the best availability for you. Life gets pretty hectic sometimes, but don’t worry — rescheduling is easy too.</p>
+            </div>
+            <div class="funct-child">
+                <img src="images/toolkit.jpg" alt="Toolkit Illustration" class="featPhoto">
+                <h4>Wellness Toolkit</h4>
+                <p>How will Mind Matters help you? What an awesome app to help you get the help you need!</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Section Name -->
-    <section>
+    <!-- Get the App -->
+    <section class="downloadNow">
+        <img src="images/ScreenGrab2.png" alt="blank rn" class="imgStall">
+        <div class="downloadContent ">
+            <h2>Get Mind Matters</h2>
+            <button class="buttonLargeB ">Download Now</button>
+        </div>
+    </section>
 
+    <!-- Upcoming Features -->
+    <section class="upcomingFeat">
+        <h2>Upcoming Features</h2>
+        <div class="upContent">
+            <div class="feat">
+                <h4>Talk Now</h4>
+                <p>Have a quick question for your therapist? Or need to let them know you’re running a little late? Or what if you forgot a tip that was mentioned?</p>
+                <p>We’re working on adding a quick-chat function to make communicating the little things a lot easier.</p>
+                <button class="buttonSmallB">Learn More</button>
+            </div>
+            <img src="images/message.jpg" alt="Talk Now Illustration" class="imgFeat">
+        </div>
     </section>
 
 
     <!-- Footer -->
     <footer>
+        <a href="#home">
+            <img src="images/logo.svg" alt="MindMatters Logo " class="logo ">
+        </a>
 
+        <ul class="navGroup">
+            <li class="navItem">About Us</li>
+            <li class="navItem">
+                <a>Wellness Resources</a>
+            </li>
+            <li class="navItem">
+                <a>Join Our Network</a>
+            </li>
+        </ul>
+        <div class="click2Download">
+            <img src="images/AppStore.svg" alt="Download from App Store" class="downloadBtn">
+            <img src="images/GooglePlay.svg" alt="Download from GooglePlay Store" class="downloadBtn">
+        </div>
     </footer>
 </body>
 
 <!-- Linked JS File -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-<script src="js/index.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </html>
