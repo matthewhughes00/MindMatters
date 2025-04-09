@@ -35,3 +35,28 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+function addToCartClick(){
+    DY.API("event", {
+        name: "Add to Cart",
+        properties: {
+            dyType: "add-to-cart-v1",
+            value: 118.26,
+            currency: "any supported currency code",
+            productId: "item-34454",
+            quantity: 2,
+            size: "XL",
+            cart: [{
+                productId: "sku-4324-bg",
+                quantity: 2,
+                itemPrice: 12.34,
+            },
+                   {
+                       productId: "item-34454",
+                       quantity: 2,
+                       itemPrice: 59.13
+                   }
+                  ]
+        }
+    });
+        }
